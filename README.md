@@ -10,15 +10,15 @@ def blue_or_red(request, userinput):
 
         if userinput=="red":
 
-            print("Fire")
+            return HttpResponse(("Got your color: Fire"))
 
         elif userinput=="blue":
 
-            print("sky")
+            return HttpResponse(("Got your color: blue"))
 
         else:
 
-            print("error")
+            return HttpResponse(("Error"))
 
 
         return HttpResponse(("Got your color"))
