@@ -19,6 +19,3 @@ def blue_or_red(request, userinput):
         else:
 
             return HttpResponse(("Error"))
-
-
-        return HttpResponse(("Got your color"))
